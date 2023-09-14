@@ -9,7 +9,7 @@ form.addEventListener("submit", async (e) => {
   console.log(messageInput.value);
 
   messageBtn.disabled = true;
-  messageBtn.innerHTML = "Sending...";
+  messageBtn.innerHTML = "Pending...";
 
   try {
     const res = await fetch("/api/flowise", {
